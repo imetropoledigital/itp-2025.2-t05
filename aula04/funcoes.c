@@ -3,6 +3,10 @@
 #include <stdlib.h>
 #include <time.h>
 
+int randMinMax(int min, int max){
+  return rand() % (max - min + 1) + min;
+}
+
 int main(){
   double x = 7.0;
   double y = 11.0;

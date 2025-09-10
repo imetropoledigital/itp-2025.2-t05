@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+int a = 10;
+
 void printMenu(){
   printf("\nEscolha a opção:\n");
   printf("1 - Informar triangulo\n");
@@ -12,6 +14,7 @@ void printMenu(){
 }
 
 int isTriangule(int lado1, int lado2, int lado3){
+  printf("Valor de a: %d\n", a);
   int aux;
   if(lado2 > lado1 && lado2 > lado3){
     aux = lado2;
@@ -28,6 +31,7 @@ int isTriangule(int lado1, int lado2, int lado3){
 }
 
 void verifyTriangule(int lado1, int lado2, int lado3){
+    printf("Valor de a: %d\n", a);
     if(isTriangule(lado1, lado2, lado3)){
       printf("Triângulo válido\n");
     } else {
