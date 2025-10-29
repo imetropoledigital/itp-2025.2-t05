@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+void meterODedo(int *x){
+    *x = *x * 2;
+}
+
+int main(){
+    int input;
+    printf("Digite um numero: ");
+    scanf("%d", &input);
+    printf("Número digitado: %d\n", input);
+    meterODedo(&input);
+    printf("Número digitado pós função meterODedo: %d\n", input);
+    return 0;
+}
