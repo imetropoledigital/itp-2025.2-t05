@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main(){
+    
 
     int numero; 
     printf("Digite o valor para o número: ");
